@@ -7,5 +7,7 @@ namespace External.Jacks
         void Save(TEntity entity);
 
         void Remove(TKey key);
+
+        TEntity Get(TKey key);
     }
 }

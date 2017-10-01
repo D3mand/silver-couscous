@@ -16,3 +16,7 @@
 /External/bin/Debug
 /External/obj/Debug
 /packages
+/Engine.Api/bin
+/Engine.Api/obj/Debug
+/Engine.Ioc/bin/Debug
+/Engine.Ioc/obj/Debug

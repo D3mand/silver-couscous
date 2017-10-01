@@ -15,12 +15,12 @@ namespace Engine.Interactors
     /// 2. Setup new Gig
     /// 3. Save Gig
     /// </summary>
-    public class RequestGig : RequestGigBoundary
+    public class CreateGig : CreateGigBoundary
     {
         GigRepository _repo;
         Validator<CreateGigRequestMessage> _validator;
 
-        public RequestGig(GigRepository repo, Validator<CreateGigRequestMessage> validator)
+        public CreateGig(GigRepository repo, Validator<CreateGigRequestMessage> validator)
         {
             _repo = repo;
             _validator = validator;

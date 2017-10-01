@@ -3,7 +3,7 @@ using Engine.Boundaries.Requests;
 
 namespace Engine.Validator
 {
-    public class RequestGigValidator: Validator<CreateGigRequestMessage>
+    public class CreateGigValidator: Validator<CreateGigRequestMessage>
     {
         AddressValidator addressValidator = new AddressValidator();
 

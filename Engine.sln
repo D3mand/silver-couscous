@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.UnitTests", "Engine.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.IntegrationTests", "Engine.IntegrationTests\Engine.IntegrationTests.csproj", "{0F5C2A81-4152-4BE0-9EAE-0AF7CFD65666}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.Api", "Engine.Api\Engine.Api.csproj", "{FDB4323C-C862-43DE-BAC7-A62C156EAA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.Ioc", "Engine.Ioc\Engine.Ioc.csproj", "{815B6F80-825F-4C4B-BDF5-DE96DA67DA24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{0F5C2A81-4152-4BE0-9EAE-0AF7CFD65666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F5C2A81-4152-4BE0-9EAE-0AF7CFD65666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F5C2A81-4152-4BE0-9EAE-0AF7CFD65666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB4323C-C862-43DE-BAC7-A62C156EAA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB4323C-C862-43DE-BAC7-A62C156EAA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB4323C-C862-43DE-BAC7-A62C156EAA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB4323C-C862-43DE-BAC7-A62C156EAA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815B6F80-825F-4C4B-BDF5-DE96DA67DA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815B6F80-825F-4C4B-BDF5-DE96DA67DA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815B6F80-825F-4C4B-BDF5-DE96DA67DA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815B6F80-825F-4C4B-BDF5-DE96DA67DA24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

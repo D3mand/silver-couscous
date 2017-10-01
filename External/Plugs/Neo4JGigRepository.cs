@@ -20,6 +20,11 @@ namespace External.Plugs
             throw new NotImplementedException();
         }
 
+        public Gig Get(string key)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Remove(string key)
         {
             throw new NotImplementedException();

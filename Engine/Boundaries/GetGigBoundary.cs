@@ -4,7 +4,7 @@ using Engine.Interactors;
 
 namespace Engine.Boundaries
 {
-    public interface CreateGigBoundary : Interactor<CreateGigRequestMessage, CreateGigResponseMessage>
+    public interface GetGigBoundary : Interactor<string, GetGigResponseMessage>
     {
     }
 }
