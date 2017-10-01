@@ -3,3 +3,16 @@
 ################################################################################
 
 /.vs/Engine/v14
+/Engine/bin/Debug
+/Engine/obj/Debug
+/Engine/.vs/Engine/v14
+/Engine.Boundries/obj/Debug
+/Engine.IntegrationTests/bin/Debug
+/Engine.IntegrationTests/obj/Debug
+/Engine.Model/bin/Debug
+/Engine.Model/obj/Debug
+/Engine.Tests/bin/Debug
+/Engine.Tests/obj/Debug
+/External/bin/Debug
+/External/obj/Debug
+/packages
