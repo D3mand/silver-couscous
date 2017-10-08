@@ -39,9 +39,9 @@ namespace Engine.Interactors
                     false);
             };
 
-            var gig = new Gig(request.Label, request.Description, request.Pickup, request.Destination, request.Bounty);                     
+            var gig = new Gig(request.Label, request.Description, request.Pickup, request.Destination, request.Bounty, request.UserId);                     
 
-            _repo.Save(gig);
+            _repo.Insert(gig);
 
             var response = new CreateGigResponseMessage(gig.Label,
                 gig.Description,

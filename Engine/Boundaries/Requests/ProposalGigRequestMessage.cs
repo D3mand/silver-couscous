@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Engine.Boundaries.Requests
 {
-    public abstract class RequestMessage
+    public class ProposalGigRequestMessage
     {
+
     }
 }

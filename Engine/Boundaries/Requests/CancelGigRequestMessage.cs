@@ -1,6 +1,6 @@
 ﻿namespace Engine.Boundaries.Requests
 {
-    public class CancelGigRequestMessage : RequestMessage
+    public class CancelGigRequestMessage 
     {
         public CancelGigRequestMessage(string id)
         {

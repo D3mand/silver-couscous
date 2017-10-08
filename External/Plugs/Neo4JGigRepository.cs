@@ -5,11 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Engine.Entities;
 using Neo4j.Driver.V1;
+using System.Text;
 
 namespace External.Plugs
 {
     public class Neo4JGigRepository : GigRepository
-    {   
+    {
         public IEnumerable<Gig> Find(string text)
         {
             throw new NotImplementedException();
@@ -29,20 +30,33 @@ namespace External.Plugs
         {
             throw new NotImplementedException();
         }
-
-        public void Save(Gig entity)
+        public void Update(Gig entity)
         {
-            using (var driver = GraphDatabase.Driver("bolt://localhost:7474", AuthTokens.Basic("neo4j", "neo4j")))
+
+        }
+
+        public void Insert(Gig entity)
+        {
+            using (var driver = GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "fred2607"), new Config { EncryptionLevel = EncryptionLevel.None }))
             using (var session = driver.Session())
             {
-                session.Run("CREATE (a:Gig {name: {name}, description: {description}, bounty: {bounty}})",
+
+                StringBuilder builder = new StringBuilder();
+                builder.AppendLine("MATCH (user:User {id: {userid}})");
+                builder.AppendLine(@"CREATE (gig:Gig {
+                                            name: {name}, 
+                                            description: {description}, 
+                                            bounty: {bounty}})");
+                builder.AppendLine("MERGE(user)-[:CREATED]->(gig)");
+
+                session.Run(builder.ToString(),
                             new Dictionary<string, object>
                             {
+                                { "userid", entity.CreatedByUserId },
                                 { "name", entity.Label },
                                 { "description", entity.Description },
-                                { "bounty", entity.Bounty}
+                                { "bounty", entity.Bounty }
                             });
-                
             }
         }
     }

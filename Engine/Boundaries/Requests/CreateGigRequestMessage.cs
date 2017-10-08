@@ -2,7 +2,7 @@
 
 namespace Engine.Boundaries.Requests
 {
-    public class CreateGigRequestMessage : RequestMessage
+    public class CreateGigRequestMessage 
     {
         //public CreateGigRequestMessage(int userId, decimal bounty, string label, string description, string pickup, string destination, DateTime date)
         //{
